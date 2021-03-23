@@ -15,4 +15,59 @@ By the end of this episode,
 learners should be able to
 __implement scattering of steps in a workflow__.
 
+> ## Exercise 1
+>
+> What if you had two arrays,
+> one a file array of bams and an array of chromosomes?
+> How would you run all chromosomes on each bam?
+>
+> > ## Solution:
+> > 
+> > ~~~
+> > steps:
+> >   GATK_HaplotypeCaller:
+> >     run: GATK_HaplotypeCaller.cwl
+> >     scatter: [intervals, input_bam]
+> >     scatterMethod: flat_crossproduct
+> > ~~~
+> > {: .language-yaml }
+> {. solution}
+{. challenge}
+
+> ## Exercise 2
+>
+> How does this change the inputs and outputs for the workflow?
+>
+> > ## Solution:
+> >
+> > ~~~
+> > cwlVersion: v1.0
+> > class: Workflow
+> > requirements:
+> >   ScatterFeatureRequirement: {}
+> > inputs:
+> >    bam: File
+> >    chromosomes: string[]
+> > outputs:
+> >   HaplotypeCaller_VCFs:
+> >     type:
+> >       type: array
+> >       items:
+> >         type: array
+> >         items: File
+> >     outputSource: GATK_HaplotypeCaller/vcf
+> > steps:
+> >   GATK_HaplotypeCaller:
+> >     run: GATK_HaplotypeCaller.cwl
+> >     scatter: [intervals, input_bam]
+> >     scatterMethod: flat_crossproduct
+> >     in:
+> >       input_bam: bam
+> >       intervals: chromosomes
+> >     out: [vcf]
+> > ~~~
+> > {: .language-yaml }
+> {. solution}
+{: .challenge}
+
 {% include links.md %}
