@@ -1,4 +1,4 @@
-# Introduction to Workflows with Common Workflow Language
+# Intermediate Workflows with the Common Workflow Language
 
 ## Contributing
 
