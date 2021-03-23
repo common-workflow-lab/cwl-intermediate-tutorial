@@ -15,6 +15,8 @@ By the end of this episode,
 learners should be able to
 __implement scattering of steps in a workflow__.
 
+# TODO Add pictures of cross product / matrix manipulation
+
 > ## Exercise 1
 >
 > What if you had two arrays,
