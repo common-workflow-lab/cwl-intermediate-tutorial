@@ -13,8 +13,8 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 Use the _Episodes_ menu above to browse through the pages for
 indivual blocks of learning objectives.
 These pages can be used for designing challenges/exercises
-for the tutorial,
-as described in detail on [this Issue](https://github.com/common-workflow-lab/cwl-novice-tutorial/issues/7).
+for the tutorial.
+
 **Note:** the order of these episode pages is arbitrary and
 these pages may be removed/rearranged/merged
 later in the lesson development process.

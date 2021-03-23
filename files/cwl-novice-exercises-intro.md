@@ -78,7 +78,7 @@ a suitable "fill in the blanks" exercise might be:
 
 > The variable `picture` contains a full-color image read from a file. Using one function, create a black and white version of the image and assign it to a new variable called `monochrome`.
 
-- be careful! it's easy to make code & run exercises too difficult for novices
+- be careful! it's easy to make code & run exercises too difficult for intermediate learners
 
 ---
 ## Potentially suitable exercise formats
@@ -93,7 +93,7 @@ a suitable "fill in the blanks" exercise might be:
 > print(slice)
 > ```
 
-- filling in the blanks is much less intimidating for novices and helps them to focus only on the specific thing you'd like to assess
+- filling in the blanks is much less intimidating for learners and helps them to focus only on the specific thing you'd like to assess
 
 ---
 ## Potentially suitable exercise formats
@@ -191,8 +191,8 @@ a suitable "fill in the blanks" exercise might be:
 ---
 ## How to contribute
 
-- head to [the GitHub repository](https://github.com/common-workflow-lab/cwl-novice-tutorial/)
-- post in [the relevant issue](https://github.com/common-workflow-lab/cwl-novice-tutorial/issues/7) to let others know which objective you're working on
+- head to [the GitHub repository](https://github.com/common-workflow-lab/cwl-intermediate-tutorial/)
+- post in [the relevant issue](https://github.com/common-workflow-lab/cwl-intermediates-tutorial/issues) to let others know which objective you're working on
 - submit one pull request per exercise
 
 ---
