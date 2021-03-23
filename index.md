@@ -61,9 +61,11 @@ for the tutorial material
 
 This tutorial is aimed at researchers
 and research software engineers
-who would like to begin automating their analyses in workflows.
+who would like to continue and enhance automating their analyses in workflows.
+
 If you're unsure whether this tutorial is a good fit for you
 check the prerequisites listed above.
+
 You may also find our [learner profiles][audience] helpful.
 These are also a useful resource during the lesson design process.
 
@@ -90,6 +92,8 @@ and be used to guide the creation of exercises and content of those episodes.
 The chunks get a bit less well-defined towards the end.
 See [this page][objective-notes] for the original notes these objectives are based on,
 created during the March 2020 lesson development sprint.
+
+TODO: remove the 'novice' learner objectives below
 
 After following one of these tutorials, learners will be able to:
 
@@ -172,7 +176,6 @@ Objectives that require further discussion, if (and how) they should be included
 - Know what a sub workflow is, how to make one, and when to use them.
 - Work around a bad software container (requires to be run as root user inside the container, expects certain directory paths)
 - Know how to use CWL v1.2 [dynamic workflow conditionals](https://www.commonwl.org/v1.2.0-dev2/Workflow.html#WorkflowStepInput)
-    - Not yet released, expected in Q2 2020
 - Run their workflow on a {Sun Grid Engine, LSF, Slurm,..} HPC system
     - explain the benefit and restrictions of HPC systems (high throughput, network restrictions, etc)
     - provide example options (e.g. Toil)
