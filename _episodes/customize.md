@@ -13,13 +13,25 @@ By the end of this episode,
 learners should be able to
 __customize a workflow at any of the many levels__:
 
+1. Change the input object
+2. Change the default values at the workflow level
+3. Add default values to existing inputs at the workflow level
+4. Change default value at the Workflow step level
+5. Add hard coded values (via default or valueFrom) at the Workflow step level
+6. Change hard coded values at the Workflow step level
+7. Change default values in the CLT description
+8. Change hard coded values in the CLT description
+9. Change the container (add helper script)
+10. Change the tool source itself
+
+
 You've been given a workflow by your colleague that runs GATK HaplotypeCaller and must change various points to fix your needs.
 
 - Change the input object
 > ## Exercise 1:
-> 
+>
 > In the input yaml file, your colleague adds an input for a bam input. You decide that you want to add a reference file input and a chromosome string input. Add those to this yaml file.
-> 
+>
 > bam:
 >   class: File
 >   location: ftp:/­/­ftp.­1000genomes.­ebi.­ac.­uk/­vol1/­ftp/­phase3/­data/­HG00133/­alignment/­HG00133.­unmapped.­ILLUMINA.­bwa.­GBR.­low_coverage.­20120522.­bam
@@ -41,7 +53,7 @@ You've been given a workflow by your colleague that runs GATK HaplotypeCaller an
 > ## Exercise 2:
 >
 > Default values in a workflow can be used at both the input object level and the step level. Add the new reference and chromosome inputs to the workflow
-> 
+>
 > cwlVersion: v1.0
 > class: Workflow
 > inputs:
